@@ -2,7 +2,7 @@ print("Merhabah\n" * 41)
 
 print("Benim adım Selim Manga,", 22, "yaşındayım", 70, "kiloyum")
 
-print("En yakın arkadaşım Burak. Onunla", 45, "yıldır tanışıyorum")
+print("En yakın arkadaşım Melih. Onunla", 45, "yıldır tanışıyorum")
 # Python kodlarını yorumlayıcı çalıştırır
 
 print(25 + 5) # toplama
