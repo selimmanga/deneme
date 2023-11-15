@@ -82,8 +82,8 @@ print("x/y\n", x/y)
 print("x%y\n", x%y)
 print("x**y\n", x**y)
 
-# Lineer Cebir işlemi
 
+#Lineer Cebir işlemleri
 x = np.array([1,2,3,4,5,60])
 y = np.array([5,6,7,8,9,10])
 print("y-5\n", y-5)               # tüm değerlerden 5 çıkar
@@ -98,9 +98,8 @@ x = y.reshape(3,2)       # 3x2 lik hale getir
 y = y.reshape(2,3)       # 2x3 lik hale getir
 print("x\n", x)
 print("y\n", y)
-print("yT", y.T)               # transpoz işlemi
-print("x matmul y \n", np.matmul(x,y))    # matris çarpımı
-
+print("yT", y.T)               # transpoz işlemi (satırları sütun, sütunları satır yapar)
+print("x matmul y \n", np.matmul(x,y))    # matris çarpımı (1. matrisin satır sayısı ile 2. matrisin sütun sayısı aynı olmak zorunda. Matrisleri çarparken transpoz işlemi kullanılır)
 
 # Toplam fonksiyonları
 x = np.arange(1,6)
@@ -110,7 +109,7 @@ print("toplam\n", np.sum(x))
 print("ortalama\n", np.mean(x))
 print("max\n", np.max(x))
 print("maksimumun indeksi\n", np.argmax(x))
-print("median\n", np.median(x))
+print("median\n", np.median(x)) # önce sıralayıp daha sonra ortanca sayıyı almak için kullanılır
 print("eşsiz değerler\n", np.unique(x))
 
 
@@ -130,7 +129,7 @@ print("a>5\n",       a>5)  # 5 ten büyük olup olmama
 print("a[a>5]\n",    a[a>5])           # 5 ten büyük olan değerleri getir
 print("a%2== 0\n",   a%2 ==0)         # çift sayı mı
 print("where a>2\n", np.where(a>2)) # hangi indeksteki değerler 2 den büyük
-print("all(a)\n",    np.all(a))        # tüm değerler 0 dan ve False tan farklı mı
+print("all(a)\n",    np.all(a))        # tüm değerlere bakıp True mu False mu olduğunu kontrol eder, hepsi true ise true, false ise false yazar
 print("all a>1\n",   np.all(a>1))     # tüm değerler 1 den büyük mi ?
 print("any(a)\n",    np.any(a))     # 0 dan ve False dan farklı değer var mı ?
 sifirlar = np.zeros((3,3))
